@@ -1,0 +1,53 @@
+/*Navigation bar CSS*/
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 100px;
+    box-sizing: border-box;
+    transition: 1s;
+  }
+  /*CSS for overlay that will form with the help of the jQuery function
+  when scrolling down on the page*/
+  nav.overlay {
+    background: rgba(7, 114, 214, 0.8);
+    height: 100px;
+    padding: 10px 100px;
+  }
+  /*CSS for business logo on the navigation bar*/
+  nav .VetLogo {
+    padding: 22px 40px;
+    height: 80px;
+    float: left;
+    transition: 3s;
+    background-image: url(img/PageLogo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  nav ul {
+    list-style: none;
+    float: right;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  nav ul li a{
+    line-height: 80px;
+    color: rgb(0, 0, 0);
+    padding: 12px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+  }
+  nav.black ul li a {
+    color: #fff;
+  }
+  nav ul li a:focus {
+    outline: none;
+  }
+  nav ul li a.active {
+    background: #E2472F;
+    border-radius: 15px;
+  }
